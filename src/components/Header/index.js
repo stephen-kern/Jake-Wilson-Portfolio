@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header>
+      <div className="logo">
+        <Link to="/" className="logo">
+          Jake Wilson
+        </Link>
+      </div>
       <nav className="navbar">
-        <div className="logo">
-          <Link to="/" className="logo">
-            Jake Wilson
-          </Link>
-        </div>
         <ul className="nav-links">
           <li>
             <Link to="/collagraphs">Collagraphs</Link>
@@ -21,11 +21,11 @@ const Header = () => {
             <Link to="/relief">Relief</Link>
           </li>
         </ul>
-        <div className="right-links">
-          <Link to="/resume">Resume</Link>
-          <Link to="/contact">Contact</Link>
-        </div>
       </nav>
+      <div className="right-links">
+        <Link to="/resume">Resume</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
     </header>
   );
 };
