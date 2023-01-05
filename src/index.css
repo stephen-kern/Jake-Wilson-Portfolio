@@ -40,7 +40,7 @@ header {
 header * {
   text-decoration: none;
   color: black;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-family: 'Lato', sans-serif;
 }
 
@@ -62,6 +62,10 @@ header * {
 }
 
 .nav-links li a:hover {
+  color: var(--accent-color);
+}
+
+.nav-links li a:active {
   color: var(--accent-color);
 }
 
