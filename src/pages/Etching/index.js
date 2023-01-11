@@ -2,6 +2,7 @@ import React from "react";
 import { Container, ImageList, ImageListItem } from "@mui/material";
 
 import etching1 from "../../assets/images/etching1.jpg";
+import studio from "../../assets/images/jakestudio.jpg";
 import etching2 from "../../assets/images/etching2.jpg";
 import etching3 from "../../assets/images/etching3.jpg";
 import etching4 from "../../assets/images/etching4.jpg";
@@ -16,6 +17,10 @@ const EtchingsGallery = () => {
         title: "image",
       },
       {
+        img: studio,
+        title: "image",
+      },
+      {
         img: etching2,
         title: "image",
       },
@@ -24,11 +29,11 @@ const EtchingsGallery = () => {
         title: "image",
       },
       {
-        img: etching4,
+        img: etching5,
         title: "image",
       },
       {
-        img: etching5,
+        img: etching4,
         title: "image",
       },
       {

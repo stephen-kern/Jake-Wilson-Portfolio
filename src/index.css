@@ -15,7 +15,7 @@ html{
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -29,12 +29,12 @@ body {
 /* ===== Header Styles ===== */
 
 header {
-  min-height: 8em;
+  min-height: 10em;
   border-bottom: 2px solid black;
-  border-bottom-width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  margin: 0 2em;
 }
 
 header * {
@@ -85,3 +85,16 @@ header * {
   color: var(--accent-color);
 }
 
+.container{
+  margin: 2em 0 ;
+  background-color: var();
+
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid black;
+  margin: 0 2em;
+  padding: 2em;
+}

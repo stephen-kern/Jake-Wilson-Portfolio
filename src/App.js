@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 import CollagraphGallery from "./pages/Collagraph";
 import EtchingsGallery from "./pages/Etching";
 import ReliefGallery from "./pages/Relief";
@@ -19,7 +21,7 @@ const App = () => {
             <Route path="/relief" element={<ReliefGallery />}></Route>
           </Routes>
         </div>
-        {/* <Footer></Footer> */}
+        <Footer />
       </Router>
     </div>
   );
