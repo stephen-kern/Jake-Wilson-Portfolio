@@ -86,9 +86,9 @@ header * {
 }
 
 .container{
-  margin: 2em 0 ;
-  background-color: var();
-
+  margin: 2em 0;
+  display: flex;
+  flex: 1;
 }
 
 footer{

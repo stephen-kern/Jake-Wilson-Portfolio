@@ -10,7 +10,7 @@ import ReliefGallery from "./pages/Relief";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <Header />
         <div className="container">
