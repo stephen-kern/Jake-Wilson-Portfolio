@@ -16,6 +16,7 @@ import collagraph12 from "../../assets/images/collagraph12.jpg";
 import collagraph13 from "../../assets/images/collagraph13.jpg";
 import collagraph14 from "../../assets/images/collagraph14.jpg";
 import collagraph15 from "../../assets/images/collagraph15.jpg";
+import JakePress from "../../assets/images/JakePress.jpg";
 
 const CollagraphGallery = () => {
   const photos = [
@@ -77,6 +78,10 @@ const CollagraphGallery = () => {
     },
     {
       img: collagraph15,
+      title: "image",
+    },
+    {
+      img: JakePress,
       title: "image",
     },
   ];
