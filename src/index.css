@@ -29,7 +29,7 @@ body {
 /* ===== Header Styles ===== */
 
 header {
-  min-height: 5em;
+  min-height: 8em;
   border-bottom: 2px solid black;
   border-bottom-width: 80%;
   display: flex;
@@ -65,8 +65,10 @@ header * {
   color: var(--accent-color);
 }
 
-.nav-links li a:active {
+.active {
   color: var(--accent-color);
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .right-links {

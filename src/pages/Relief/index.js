@@ -97,8 +97,8 @@ const ReliefGallery = () => {
   ];
 
   return (
-    <Container maxWidth="xl">
-      <ImageList variant="masonry" cols={3} gap={8}>
+    <Container maxWidth="xxl">
+      <ImageList variant="masonry" cols={4} gap={32}>
         {photos.map((item) => (
           <ImageListItem key={item.img}>
             <img
