@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import CollagraphGallery from "./pages/Collagraph";
 import EtchingsGallery from "./pages/Etching";
 import ReliefGallery from "./pages/Relief";
+import ContactUs from "./pages/Contact";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/collagraphs" element={<CollagraphGallery />}/>
             <Route path="/etchings" element={<EtchingsGallery />}></Route>
             <Route path="/relief" element={<ReliefGallery />}></Route>
+            <Route path="/contact" element={<ContactUs />}></Route>
           </Routes>
         </div>
         <Footer />
