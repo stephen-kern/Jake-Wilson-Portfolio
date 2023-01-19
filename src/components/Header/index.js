@@ -12,13 +12,13 @@ const Header = () => {
       <nav className="navbar">
         <ul className="nav-links">
           <li>
-            <NavLink to="/collagraphs">Collagraphs</NavLink>
+            <NavLink to="/collagraphs">COLLAGRAPH</NavLink>
           </li>
           <li>
-            <NavLink to="/etchings" >Etchings</NavLink>
+            <NavLink to="/etchings" >ETCHING</NavLink>
           </li>
           <li>
-            <NavLink to="/relief" >Relief</NavLink>
+            <NavLink to="/relief" >RELIEF</NavLink>
           </li>
         </ul>
       </nav>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 :root {
   --accent-color: #B73E3E;
@@ -40,12 +41,15 @@ header {
 header * {
   text-decoration: none;
   color: black;
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-family: 'Lato', sans-serif;
 }
 
 .logo {
   flex: 0 0 auto;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
 }
 
 .nav-links {
@@ -58,7 +62,7 @@ header * {
 }
 
 .nav-links li {
-  margin: 0 1rem;  
+  margin: 0 1rem; 
 }
 
 .nav-links li a:hover {
@@ -67,8 +71,6 @@ header * {
 
 .active {
   color: var(--accent-color);
-  font-weight: bold;
-  font-size: 1.25rem;
 }
 
 .right-links {
@@ -85,11 +87,40 @@ header * {
   color: var(--accent-color);
 }
 
+/* ==== Layout Styles ==== */
+
 .container{
   margin: 2em 0;
   display: flex;
   flex: 1;
+  justify-content: center;
 }
+
+.bio-container{
+  display: flex;
+  background-color: darkcyan;
+}
+
+.bio-image-container{
+  flex: 1;
+  min-width: 45%;
+  min-height: 45%;
+}
+
+.bio-image-container img{
+  width: 100%;
+}
+
+.bio{
+  flex: 2;
+  padding: 0.8rem;
+}
+
+/* .modal-image{
+  background-color: rgba(#fff, #fff, #fff, 0.8);
+} */
+
+/* ==== Contact Styles ==== */
 
 .form-container {
   display: flex;
@@ -121,7 +152,7 @@ form {
 }
 
 form input, textarea {
-  margin: 0.5em 0 2em;
+  margin: 0.5em 0 2.5em;
   padding: 0.7em;
   background-color: #FAFAFA;
   border: solid 1px grey
@@ -146,7 +177,7 @@ form label {
   color: #fff;
 }
 
-
+/* ==== Footer Styles ==== */
 
 footer{
   display: flex;

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+import Home from "./pages/Home";
 import CollagraphGallery from "./pages/Collagraph";
 import EtchingsGallery from "./pages/Etching";
 import ReliefGallery from "./pages/Relief";
@@ -16,7 +17,7 @@ const App = () => {
         <Header />
         <div className="container">
           <Routes>
-            {/* <Route path="" element={<Home />}/> */}
+            <Route path="" element={<Home />}/>
             <Route path="/collagraphs" element={<CollagraphGallery />}/>
             <Route path="/etchings" element={<EtchingsGallery />}></Route>
             <Route path="/relief" element={<ReliefGallery />}></Route>
