@@ -23,7 +23,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="right-links">
-        <NavLink to="/resume">Resume</NavLink>
+        <NavLink to="/resume">CV</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </div>
     </header>
