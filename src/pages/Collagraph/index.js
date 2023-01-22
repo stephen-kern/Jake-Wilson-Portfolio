@@ -1,6 +1,6 @@
 import { React } from "react";
 import { Container, ImageList, ImageListItem } from "@mui/material";
-import ModalImage from "react-modal-image";
+import MyModalImage from "../../components/Modal";
 
 import collagraph1 from "../../assets/images/collagraph1.jpg";
 import collagraph2 from "../../assets/images/collagraph2.jpg";
@@ -92,16 +92,7 @@ const CollagraphGallery = () => {
       <ImageList variant="masonry" cols={4} gap={32}>
         {photos.map((item, index) => (
           <ImageListItem key={item.img}>
-            <ModalImage
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              alt={item.title}
-              loading="lazy"
-              small={photos[index].img}
-              large={photos[index].img}
-              hideDownload={true}
-              hideZoom={true}
-            />
+            <MyModalImage img={item.img} title={item.title} />
           </ImageListItem>
         ))}
       </ImageList>

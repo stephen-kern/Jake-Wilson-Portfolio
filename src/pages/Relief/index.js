@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, ImageList, ImageListItem } from "@mui/material";
+import MyModalImage from "../../components/Modal";
 
 import relief1 from "../../assets/images/relief1.jpg";
 import relief2 from "../../assets/images/relief2.jpg";
@@ -99,14 +100,9 @@ const ReliefGallery = () => {
   return (
     <Container maxWidth="xxl">
       <ImageList variant="masonry" cols={4} gap={32}>
-        {photos.map((item) => (
+        {photos.map((item, index) => (
           <ImageListItem key={item.img}>
-            <img
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              alt={item.title}
-              loading="lazy"
-            />
+            <MyModalImage img={item.img} title={item.title} />
           </ImageListItem>
         ))}
       </ImageList>
