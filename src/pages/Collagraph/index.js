@@ -18,6 +18,17 @@ import collagraph13 from "../../assets/images/collagraph13.jpg";
 import collagraph14 from "../../assets/images/collagraph14.jpg";
 import collagraph15 from "../../assets/images/collagraph15.jpg";
 import JakePress from "../../assets/images/JakePress.jpg";
+import sprawl from "../../assets/images/sprawl.jpg";
+import steel from "../../assets/images/steel.jpg";
+import studio3 from "../../assets/images/studio3.jpg";
+import youremine from "../../assets/images/youremine.jpg";
+import mine from "../../assets/images/mine.jpg";
+import curb from "../../assets/images/curb.jpg";
+import cross from "../../assets/images/cross.jpg";
+import pillar from "../../assets/images/pillar.jpg";
+import collage from "../../assets/images/collage.jpg";
+import hast from "../../assets/images/collagraph-hast.jpg";
+import purpose from "../../assets/images/purpose.jpg";
 
 const CollagraphGallery = () => {
   const photos = [
@@ -38,6 +49,10 @@ const CollagraphGallery = () => {
       title: "image",
     },
     {
+      img: sprawl,
+      title: "image",
+    },
+    {
       img: collagraph4,
       title: "image",
     },
@@ -46,7 +61,7 @@ const CollagraphGallery = () => {
       title: "image",
     },
     {
-      img: collagraph6,
+      img: collagraph11,
       title: "image",
     },
     {
@@ -54,7 +69,7 @@ const CollagraphGallery = () => {
       title: "image",
     },
     {
-      img: collagraph11,
+      img: collagraph6,
       title: "image",
     },
     {
@@ -85,6 +100,47 @@ const CollagraphGallery = () => {
       img: collagraph15,
       title: "image",
     },
+    {
+      img: purpose,
+      title: "purpose"
+    },
+    {
+      img: steel,
+      title: "collagraph"
+    },
+    {
+      img: collage,
+      title: "collagraph"
+    },
+    {
+      img: mine,
+      title: "purpose"
+    },
+    {
+      img: curb,
+      title: "purpose"
+    },
+    {
+      img: youremine,
+      title: "purpose"
+    },
+    {
+      img: cross,
+      title: "purpose"
+    },
+    {
+      img: pillar,
+      title: "purpose"
+    },
+    {
+      img: hast,
+      title: "purpose"
+    },
+    {
+      img: studio3,
+      title: "purpose"
+    },
+    
   ];
 
   return (
