@@ -20,6 +20,9 @@ const Header = () => {
           <li>
             <NavLink to="/relief" >RELIEF</NavLink>
           </li>
+          <li>
+            <NavLink to="/ceramics" >CERAMIC</NavLink>
+          </li>
         </ul>
       </nav>
       <div className="right-links">
