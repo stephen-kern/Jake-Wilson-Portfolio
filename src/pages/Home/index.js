@@ -13,7 +13,10 @@ const Home = () => {
           As a fine arts printmaker with a BFA degree from Southern Illinois
           University Edwardsville, I specialize in a diverse range of
           printmaking techniques, such as woodcut, linocut, wood engraving,
-          collagraph, and stone lithography. My artwork explores subjects of
+          collagraph, and stone lithography. 
+          <br></br>
+          <br></br>
+          My artwork explores subjects of
           environmentalism, land-use, sustainability in architecture, and the
           impact of American city planning and development. My work has been
           featured in notable exhibitions, including Southern Illinois

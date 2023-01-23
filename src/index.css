@@ -4,7 +4,7 @@
 :root {
   --accent-color: #B73E3E;
   --bg-accent-color: #FAFAFA;
-  --bg-color: #e7e4e4;
+  --bg-color: #f2f2f2;
 }
 
 *{
@@ -103,11 +103,11 @@ header * {
 .bio-container{
   display: flex;
   background-color: var(--bg-color);
-  max-width: 80%;  
+  max-width: 70%;  
 }
 
 .bio-container img{
-  max-width: 50%;
+  max-width: 45%;
   max-height: 100%;
 }
 
@@ -118,11 +118,9 @@ header * {
 
 .bio-title{
   font-size: 1.8rem;
-  text-align: center;
 }
 
 .bio-subtitle{
-  text-align: center;
   font-size: 1rem;
   font-weight: 200;
   letter-spacing: 3px;
@@ -134,10 +132,10 @@ header * {
   content: '';
   display: block;
   height: 1px;
-  width: 15em;
+  width: 8em;
   background: #000;
-  margin: 0.5rem auto;
-  opacity: 0.5;
+  margin: 0.5rem 0;
+  opacity: 0.8;
 }
 
 .bio p {
