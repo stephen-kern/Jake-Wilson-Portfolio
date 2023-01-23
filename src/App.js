@@ -10,6 +10,7 @@ import EtchingsGallery from "./pages/Etching";
 import ReliefGallery from "./pages/Relief";
 import CeramicGallery from "./pages/Ceramic";
 import ContactUs from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/etchings" element={<EtchingsGallery />}></Route>
             <Route path="/relief" element={<ReliefGallery />}></Route>
             <Route path="/ceramics" element={<CeramicGallery />}></Route>
+            <Route path="/curriculum" element={<Resume />}> </Route>
             <Route path="/contact" element={<ContactUs />}></Route>
           </Routes>
         </div>

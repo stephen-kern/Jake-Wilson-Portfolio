@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 :root {
@@ -94,7 +94,7 @@ header * {
 /* ==== Layout Styles ==== */
 
 .container{
-  margin: 2em 0;
+  margin-top: 2em;
   display: flex;
   flex: 1;
   justify-content: center;
@@ -103,7 +103,8 @@ header * {
 .bio-container{
   display: flex;
   background-color: var(--bg-color);
-  max-width: 70%;  
+  max-width: 70%; 
+  height: 70%; 
 }
 
 .bio-container img{
@@ -147,6 +148,25 @@ header * {
   flex-wrap: wrap;
 }
 
+.resume{
+  min-width: 55%;
+  max-width: 90%;
+  padding: 0 0.8rem;
+}
+
+.resume h3 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: 0.05rem;
+  margin-top: 2rem;
+}
+
+.resume * {
+  font-size: 1.05rem;
+  letter-spacing: 0.05rem;
+  margin: 0.8rem 0;
+}
+
 /* ==== Contact Styles ==== */
 
 .form-container {
@@ -160,7 +180,7 @@ header * {
 }
 
 .form-img-container {
-  max-width: 45%; 
+  max-width: 45%;
 }
 
 .form-img-container img {
@@ -169,6 +189,7 @@ header * {
 
 .email-form {
   width: 50%; 
+  height: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -193,7 +214,7 @@ form label {
   background-color: #fff;
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
-  width: 7vw;
+  width: 25%;
   font-weight: bold;
   letter-spacing: 0.05em;
 }

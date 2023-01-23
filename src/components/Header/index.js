@@ -26,7 +26,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="right-links">
-        <NavLink to="/resume">CV</NavLink>
+        <NavLink to="/curriculum">CV</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </div>
     </header>
