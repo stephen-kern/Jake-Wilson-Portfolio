@@ -10,10 +10,10 @@ const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
         form.current,
-        "YOUR_PUBLIC_KEY"
+        process.env.PUBLIC_KEY
       )
       .then(
         (result) => {
