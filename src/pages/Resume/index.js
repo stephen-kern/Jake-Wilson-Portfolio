@@ -17,53 +17,46 @@ const Resume = () => {
       </ul>
 
       <h3>EXHIBITIONS & PUBLICATIONS</h3>
+
+      <p>Harry Wood Gallery, Tempe, AZ (2022)</p>
       <ul>
-        <li>
-          Harry Wood Gallery, Tempe, AZ (2022)
-          <ul>
-            <li>Group MFA Exhibition, Curator: Mikey Estes</li>
-          </ul>
-        </li>
-        <li>
-          The Sheldon Art Gallery, St. Louis, MO (2022)
-          <ul>
-            <li>Group Exhibition, Curator: Paula Lincoln</li>
-          </ul>
-        </li>
-        <li>
-          Manifest Gallery, Cincinnati, OH (2022)
-          <ul>
-            <li>Suburban Group Exhibition</li>
-          </ul>
-        </li>
-        <li>
-          Art and Design Gallery, Southern Illinois University Edwardsville,
-          Illinois (2021)
-          <ul>
-            <li>Student Exhibition, Juror: Paula Lincoln</li>
-            <li>Centering, BFA Exhibition</li>
-          </ul>
-        </li>
-        <li>River Bluff Review, Online publication (2021)</li>
-        <li>
-          Wood River Museum, Wood River, Illinois (2021)
-          <ul>
-            <li>Small Works Show, Juror: Susan Bostwick</li>
-          </ul>
-        </li>
+        <li>Group MFA Exhibition, Curator: Mikey Estes</li>
+      </ul>
+
+      <p>The Sheldon Art Gallery, St. Louis, MO (2022)</p>
+      <ul>
+        <li>Group Exhibition, Curator: Paula Lincoln</li>
+      </ul>
+
+      <p>Manifest Gallery, Cincinnati, OH (2022)</p>
+      <ul>
+        <li>Suburban Group Exhibition</li>
+      </ul>
+
+      <p>
+        Art and Design Gallery, Southern Illinois University Edwardsville,
+        Illinois (2021)
+      </p>
+      <ul>
+        <li>Student Exhibition, Juror: Paula Lincoln</li>
+        <li>Centering, BFA Exhibition</li>
+      </ul>
+
+      <p>River Bluff Review, Online publication (2021)</p>
+
+      <p>Wood River Museum, Wood River, Illinois (2021)</p>
+      <ul>
+        <li>Small Works Show, Juror: Susan Bostwick</li>
       </ul>
 
       <h3>AWARDS & HONORS</h3>
+
+      <p>SIUE Print Council Award (Spring 2022)</p>
+      <p>Alumni Printmaking Award (Spring 2022)</p>
+      <p>David C. Huntley Founder's Award (Spring 2022)</p>
+      <p>Art and Design Scholarship (Fall 2021)</p>
       <ul>
-        <li>SIUE Print Council Award (Spring 2022)</li>
-        <li>Alumni Printmaking Award (Spring 2022)</li>
-        <li>David C. Huntley Founder's Award (Spring 2022)</li>
-        <li>
-          Art and Design Scholarship (Fall 2021)
-          <ul>
-            <li>Full Tuition Waiver</li>
-          </ul>
-        </li>
+        <li>Full Tuition Waiver</li>
       </ul>
     </div>
   );

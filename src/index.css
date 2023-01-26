@@ -94,7 +94,7 @@ header * {
 /* ==== Layout Styles ==== */
 
 .container{
-  margin-top: 2em;
+  margin: 2em 0;
   display: flex;
   flex: 1;
   justify-content: center;
@@ -104,7 +104,6 @@ header * {
   display: flex;
   background-color: var(--bg-color);
   max-width: 70%; 
-  height: 70%; 
 }
 
 .bio-container img{
@@ -114,7 +113,6 @@ header * {
 }
 
 .bio{
-  flex: 1;
   padding: 2rem;
 }
 
@@ -161,10 +159,14 @@ header * {
   margin-top: 2rem;
 }
 
+.resume ul li{
+  font-size: 0.9rem;
+}
+
 .resume * {
   font-size: 1.05rem;
   letter-spacing: 0.05rem;
-  margin: 0.8rem 0;
+  margin: 1rem 0;
 }
 
 /* ==== Contact Styles ==== */
@@ -188,8 +190,7 @@ header * {
 }
 
 .email-form {
-  width: 50%; 
-  height: 50%;
+  min-width: 50%; 
   display: flex;
   flex-direction: column;
 }
@@ -240,11 +241,25 @@ footer{
 @media screen and (max-width: 810px){
   .bio-container{
     flex-direction: column;
+    max-width: 80%;  
   }
   
   .bio-container img{
     min-width: 100%;
-    max-height: 30%;
+    max-height: 35%;
     object-fit: cover;
+  }
+  .form-container{
+    flex-direction: column;
+    justify-items: center;
+  }
+  .email-form{
+    margin: 0 auto;
+    min-width: 75%;
+    justify-content: center;
+  }
+  .form-img-container{
+    margin: 0 auto;
+    max-width: 50%;
   }
 }
