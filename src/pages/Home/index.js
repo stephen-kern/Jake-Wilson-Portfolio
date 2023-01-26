@@ -1,11 +1,11 @@
 import React from "react";
 
-import JakeStudio from "../../assets/images/jakestudio.jpg";
+import JakeBig from "../../assets/images/jakebig.jpg";
 
 const Home = () => {
   return (
     <div className="bio-container">
-      <img src={JakeStudio} alt="#"></img>
+      <img src={JakeBig} alt="#"></img>
       <div className="bio">
         <h2 className="bio-title">Jake Wilson</h2>
         <h4 className="bio-subtitle">PRINTMAKER</h4>

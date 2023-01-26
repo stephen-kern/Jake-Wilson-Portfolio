@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, ImageList, ImageListItem } from "@mui/material";
+import { Container, ImageListItem, } from "@mui/material";
+import Masonry from '@mui/lab/Masonry';
 import MyModalImage from "../../components/Modal";
 
 import ceramic1 from "../../assets/images/ceramic1.JPG";
@@ -14,43 +15,36 @@ const CeramicGallery = () => {
   const photos = [
     {
       img: ceramic1,
-      title: "image",
     },
     {
       img: ceramic2,
-      title: "image",
     },
     {
       img: ceramic3,
-      title: "image",
     },
     {
       img: ceramic4,
-      title: "image",
     },
     {
       img: ceramic5,
-      title: "image",
     },
     {
       img: ceramic6,
-      title: "image",
     },
     {
       img: kiln,
-      title: "image",
     },
   ];
 
   return (
     <Container maxWidth="xxl">
-      <ImageList variant="masonry" cols={4} gap={32}>
+      <Masonry columns={{sm: 1, md: 2, lg: 3, xl: 4}} spacing={{ sm: 2, md: 3, lg: 4, xl: 4 }}>
         {photos.map((item, index) => (
           <ImageListItem key={item.img}>
             <MyModalImage img={item.img} title={item.title} />
           </ImageListItem>
         ))}
-      </ImageList>
+      </Masonry>
     </Container>
   );
 };

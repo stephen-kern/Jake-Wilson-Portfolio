@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, ImageList, ImageListItem } from "@mui/material";
+import { Container, ImageListItem, } from "@mui/material";
+import Masonry from '@mui/lab/Masonry';
 import MyModalImage from "../../components/Modal";
 
 import relief1 from "../../assets/images/relief1.jpg";
@@ -25,87 +26,69 @@ const ReliefGallery = () => {
   const photos = [
     {
       img: relief1,
-      title: "image",
     },
     {
       img: relief2,
-      title: "image",
     },
     {
       img: relief3,
-      title: "image",
     },
     {
       img: relief4,
-      title: "image",
     },
     {
       img: relief5,
-      title: "image",
     },
     {
       img: relief6,
-      title: "image",
     },
     {
       img: relief7,
-      title: "image",
     },
     {
       img: relief8,
-      title: "image",
     },
     {
       img: relief9,
-      title: "image",
     },
     {
       img: relief10,
-      title: "image",
     },
     {
       img: relief11,
-      title: "image",
     },
     {
       img: relief12,
-      title: "image",
     },
     {
       img: relief13,
-      title: "image",
     },
     {
       img: relief14,
-      title: "image",
     },
     {
       img: relief15,
-      title: "image",
     },
     {
       img: relief16,
-      title: "image",
     },
     {
       img: relief17,
-      title: "image",
     },
     {
       img: relief18,
-      title: "image",
     },
   ];
 
   return (
     <Container maxWidth="xxl">
-      <ImageList variant="masonry" cols={4} gap={32}>
+      <Masonry columns={{sm: 1, md: 2, lg: 3, xl: 4}} spacing={{ sm: 2, md: 3, lg: 4, xl: 4 }}>
         {photos.map((item, index) => (
           <ImageListItem key={item.img}>
             <MyModalImage img={item.img} title={item.title} />
           </ImageListItem>
         ))}
-      </ImageList>
+      </Masonry>
     </Container>
   );
 };

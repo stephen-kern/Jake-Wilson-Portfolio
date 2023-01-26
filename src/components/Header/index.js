@@ -1,7 +1,13 @@
 import { React } from "react";
+import { useMediaQuery } from "@mui/material";
 import { NavLink, Link } from "react-router-dom";
+import MobileNav from "../MobileNav";
+
 
 const Header = () => {
+
+  const isMobile = useMediaQuery('(max-width: 810px)');
+
   return (
     <header>
       <div className="logo">
@@ -15,13 +21,13 @@ const Header = () => {
             <NavLink to="/collagraphs">COLLAGRAPH</NavLink>
           </li>
           <li>
-            <NavLink to="/etchings" >ETCHING</NavLink>
+            <NavLink to="/etchings">ETCHING</NavLink>
           </li>
           <li>
-            <NavLink to="/relief" >RELIEF</NavLink>
+            <NavLink to="/relief">RELIEF</NavLink>
           </li>
           <li>
-            <NavLink to="/ceramics" >CERAMIC</NavLink>
+            <NavLink to="/ceramics">CERAMIC</NavLink>
           </li>
         </ul>
       </nav>
@@ -29,6 +35,7 @@ const Header = () => {
         <NavLink to="/curriculum">CV</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </div>
+      {isMobile && <MobileNav />}
     </header>
   );
 };

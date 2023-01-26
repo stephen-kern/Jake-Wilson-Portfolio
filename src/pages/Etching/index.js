@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, ImageList, ImageListItem } from "@mui/material";
+import { Container, ImageListItem, } from "@mui/material";
+import Masonry from '@mui/lab/Masonry';
 import MyModalImage from "../../components/Modal";
 
 import etching1 from "../../assets/images/etching1.jpg";
@@ -14,43 +15,36 @@ const EtchingsGallery = () => {
   const photos = [
     {
       img: etching1,
-      title: "image",
     },
     {
       img: studio,
-      title: "image",
     },
     {
       img: etching2,
-      title: "image",
     },
     {
       img: etching3,
-      title: "image",
     },
     {
       img: etching5,
-      title: "image",
     },
     {
       img: etching4,
-      title: "image",
     },
     {
       img: etching6,
-      title: "image",
     },
   ];
 
   return (
     <Container maxWidth="xxl">
-      <ImageList variant="masonry" cols={4} gap={32}>
+      <Masonry columns={{sm: 1, md: 2, lg: 3, xl: 4}} spacing={{ sm: 2, md: 3, lg: 4, xl: 4 }}>
         {photos.map((item, index) => (
           <ImageListItem key={item.img}>
             <MyModalImage img={item.img} title={item.title} />
           </ImageListItem>
         ))}
-      </ImageList>
+      </Masonry>
     </Container>
   );
 };

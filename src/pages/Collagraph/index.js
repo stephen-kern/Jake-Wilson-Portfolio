@@ -1,5 +1,6 @@
 import { React } from "react";
-import { Container, ImageList, ImageListItem } from "@mui/material";
+import { Container, ImageListItem, } from "@mui/material";
+import Masonry from '@mui/lab/Masonry';
 import MyModalImage from "../../components/Modal";
 
 import collagraph1 from "../../assets/images/collagraph1.jpg";
@@ -34,124 +35,98 @@ const CollagraphGallery = () => {
   const photos = [
     {
       img: collagraph1,
-      title: "image",
     },
     {
       img: collagraph2,
-      title: "image",
     },
     {
       img: collagraph3,
-      title: "image",
     },
     {
       img: collagraph10,
-      title: "image",
     },
     {
       img: sprawl,
-      title: "image",
     },
     {
       img: collagraph4,
-      title: "image",
     },
     {
       img: collagraph5,
-      title: "image",
     },
     {
       img: collagraph11,
-      title: "image",
     },
     {
       img: collagraph9,
-      title: "image",
     },
     {
       img: collagraph6,
-      title: "image",
     },
     {
       img: collagraph8,
-      title: "image",
     },
     {
       img: collagraph7,
-      title: "image",
     },
     {
       img: JakePress,
-      title: "image",
     },
     {
       img: collagraph12,
-      title: "image",
     },
     {
       img: collagraph13,
-      title: "image",
     },
     {
       img: collagraph14,
-      title: "image",
     },
     {
       img: collagraph15,
-      title: "image",
     },
     {
       img: purpose,
-      title: "purpose"
     },
     {
       img: steel,
-      title: "collagraph"
     },
     {
       img: collage,
-      title: "collagraph"
     },
     {
       img: mine,
-      title: "purpose"
     },
     {
       img: curb,
-      title: "purpose"
     },
     {
       img: youremine,
-      title: "purpose"
     },
     {
       img: cross,
-      title: "purpose"
     },
     {
       img: pillar,
-      title: "purpose"
     },
     {
       img: hast,
-      title: "purpose"
     },
     {
       img: studio3,
-      title: "purpose"
     },
     
   ];
 
+
   return (
     <Container maxWidth="xxl">
-      <ImageList variant="masonry" cols={4} gap={32}>
+      <Masonry columns={{sm: 1, md: 2, lg: 3, xl: 4}} spacing={{ sm: 2, md: 3, lg: 4, xl: 4 }}>
         {photos.map((item, index) => (
           <ImageListItem key={item.img}>
-            <MyModalImage img={item.img} title={item.title} />
+            <MyModalImage img={item.img} />
           </ImageListItem>
         ))}
-      </ImageList>
+      </Masonry>
     </Container>
   );
 };
