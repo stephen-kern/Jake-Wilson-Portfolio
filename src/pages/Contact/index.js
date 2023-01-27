@@ -1,23 +1,26 @@
-import React, { useRef } from "react";
+import { React, useRef,  } from "react";
 import emailjs from "@emailjs/browser";
 import JakeStudio from "../../assets/images/JakePress.jpg";
 
 const ContactUs = () => {
   const form = useRef();
+  const resetForm = () => {
+    form.current.reset();
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        process.env.PUBLIC_KEY
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
         (result) => {
           console.log(result.text);
+          resetForm();
         },
         (error) => {
           console.log(error.text);
@@ -32,14 +35,19 @@ const ContactUs = () => {
       </div>
       <div className="email-form">
         <h4 className="contact-title"> Contact Jake Wilson </h4>
-        <form ref={form} onSubmit={sendEmail}>
+        <form
+          ref={form}
+          onSubmit={(e) => {
+            sendEmail(e);
+          }}
+        >
           <label>Name</label>
-          <input type="text" name="user_name" />
+          <input type="text" name="user_name" required/>
           <label>Email</label>
-          <input type="email" name="user_email" />
+          <input type="email" name="user_email" required/>
           <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="SEND" className="contact-btn"/>
+          <textarea name="message" required/>
+          <input type="submit" value="SEND" className="contact-btn" />
         </form>
       </div>
     </div>
