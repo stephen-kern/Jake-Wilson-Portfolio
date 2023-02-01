@@ -18,22 +18,22 @@ const Header = () => {
       <nav className="navbar">
         <ul className="nav-links">
           <li>
-            <NavLink to="/collagraphs">COLLAGRAPH</NavLink>
+            <NavLink to="/Jake-Wilson-Portfolio/collagraphs">COLLAGRAPH</NavLink>
           </li>
           <li>
-            <NavLink to="/etchings">ETCHING</NavLink>
+            <NavLink to="/Jake-Wilson-Portfolio/etchings">ETCHING</NavLink>
           </li>
           <li>
-            <NavLink to="/relief">RELIEF</NavLink>
+            <NavLink to="/Jake-Wilson-Portfolio/relief">RELIEF</NavLink>
           </li>
           <li>
-            <NavLink to="/ceramics">CERAMIC</NavLink>
+            <NavLink to="/Jake-Wilson-Portfolio/ceramics">CERAMIC</NavLink>
           </li>
         </ul>
       </nav>
       <div className="right-links">
-        <NavLink to="/curriculum">CV</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/Jake-Wilson-Portfolio/curriculum">CV</NavLink>
+        <NavLink to="/Jake-Wilson-Portfolio/contact">Contact</NavLink>
       </div>
       {isMobile && <MobileNav />}
     </header>

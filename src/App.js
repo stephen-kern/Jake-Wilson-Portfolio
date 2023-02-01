@@ -20,12 +20,12 @@ const App = () => {
         <div className="container">
           <Routes>
             <Route path="/Jake-Wilson-Portfolio" element={<Home />}/>
-            <Route path="/collagraphs" element={<CollagraphGallery />}/>
-            <Route path="/etchings" element={<EtchingsGallery />}></Route>
-            <Route path="/relief" element={<ReliefGallery />}></Route>
-            <Route path="/ceramics" element={<CeramicGallery />}></Route>
-            <Route path="/curriculum" element={<Resume />}> </Route>
-            <Route path="/contact" element={<ContactUs />}></Route>
+            <Route path="/Jake-Wilson-Portfolio/collagraphs" element={<CollagraphGallery />}/>
+            <Route path="/Jake-Wilson-Portfolio/etchings" element={<EtchingsGallery />}></Route>
+            <Route path="/Jake-Wilson-Portfolio/relief" element={<ReliefGallery />}></Route>
+            <Route path="/Jake-Wilson-Portfolio/ceramics" element={<CeramicGallery />}></Route>
+            <Route path="/Jake-Wilson-Portfolio/curriculum" element={<Resume />}> </Route>
+            <Route path="/Jake-Wilson-Portfolio/contact" element={<ContactUs />}></Route>
           </Routes>
         </div>
         <Footer />
