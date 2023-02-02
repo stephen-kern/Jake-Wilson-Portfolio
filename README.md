@@ -48,7 +48,7 @@ With the aim of refining my understanding of React and practicing the fundamenta
 ## Deployment Links
 
 - [Original Portfolio](https://jakewilsonart.github.io/index.html) 
-- [Current Portfolio](https://stephen-kern.github.io/Jake-Wilson-Portfolio) 
+- [Current Portfolio](https://jake-wilson-portfolio.vercel.app/) 
 - [GitHub Project](https://github.com/users/stephen-kern/projects/4) 
 
 ---
