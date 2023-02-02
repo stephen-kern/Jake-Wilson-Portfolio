@@ -11,29 +11,29 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
-        <Link to="/Jake-Wilson-Portfolio" className="logo">
+        <Link to="/" className="logo">
           Jake Wilson
         </Link>
       </div>
       <nav className="navbar">
         <ul className="nav-links">
           <li>
-            <NavLink to="/Jake-Wilson-Portfolio/collagraphs">COLLAGRAPH</NavLink>
+            <NavLink to="/collagraphs">COLLAGRAPH</NavLink>
           </li>
           <li>
-            <NavLink to="/Jake-Wilson-Portfolio/etchings">ETCHING</NavLink>
+            <NavLink to="/etchings">ETCHING</NavLink>
           </li>
           <li>
-            <NavLink to="/Jake-Wilson-Portfolio/relief">RELIEF</NavLink>
+            <NavLink to="/relief">RELIEF</NavLink>
           </li>
           <li>
-            <NavLink to="/Jake-Wilson-Portfolio/ceramics">CERAMIC</NavLink>
+            <NavLink to="/ceramics">CERAMIC</NavLink>
           </li>
         </ul>
       </nav>
       <div className="right-links">
-        <NavLink to="/Jake-Wilson-Portfolio/curriculum">CV</NavLink>
-        <NavLink to="/Jake-Wilson-Portfolio/contact">Contact</NavLink>
+        <NavLink to="/curriculum">CV</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </div>
       {isMobile && <MobileNav />}
     </header>
