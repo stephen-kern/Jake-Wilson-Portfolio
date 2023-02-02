@@ -60,3 +60,6 @@ With the aim of refining my understanding of React and practicing the fundamenta
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/stephen-kern)
 
 📥 : stephenkern96@gmail.com
+
+--- 
+![jwp](https://user-images.githubusercontent.com/94320530/216242921-b2f0959e-fefe-4713-a4d7-57989ec1699b.png)
