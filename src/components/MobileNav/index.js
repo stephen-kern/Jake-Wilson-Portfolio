@@ -30,13 +30,13 @@ const MobileNav = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}><NavLink to="/collagraphs" className="mobile-nav-link">COLLAGRAPH</NavLink></MenuItem>
-        <MenuItem onClick={handleClose}><NavLink to="/etchings" className="mobile-nav-link">ETCHING</NavLink></MenuItem>
-        <MenuItem onClick={handleClose}><NavLink to="/relief" className="mobile-nav-link">RELIEF</NavLink></MenuItem>
-        <MenuItem onClick={handleClose}><NavLink to="/ceramics" className="mobile-nav-link">CERAMIC</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}><NavLink to="/Jake-Wilson-Portfolio/collagraphs" className="mobile-nav-link">COLLAGRAPH</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}><NavLink to="/Jake-Wilson-Portfolio/etchings" className="mobile-nav-link">ETCHING</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}><NavLink to="/Jake-Wilson-Portfolio/relief" className="mobile-nav-link">RELIEF</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}><NavLink to="/Jake-Wilson-Portfolio/ceramics" className="mobile-nav-link">CERAMIC</NavLink></MenuItem>
         <Divider /> 
-        <MenuItem onClick={handleClose}><NavLink to="/curriculum" className="mobile-nav-link">CV</NavLink></MenuItem>
-        <MenuItem onClick={handleClose}><NavLink to="/contact" className="mobile-nav-link">Contact</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}><NavLink to="/Jake-Wilson-Portfolio/curriculum" className="mobile-nav-link">CV</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}><NavLink to="/Jake-Wilson-Portfolio/contact" className="mobile-nav-link">Contact</NavLink></MenuItem>
       </Menu>
     </div>
   );
